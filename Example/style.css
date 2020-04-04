@@ -39,4 +39,7 @@ header>h1{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+.white{
+    color: white;
+}
 
