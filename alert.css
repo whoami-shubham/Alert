@@ -14,13 +14,12 @@
     transition: opacity .3s;
 }
 .alert-box{
-    border: 2px solid #ccc;
-    margin: 1rem;
+    border: 1px solid #ccc;
     padding: 1rem;
     background: #fff;
     z-index: 1001;
-    border-radius: 10px;
-    width: 40%;
+    border-radius: 5px;
+    width: fit-content;
     height: fit-content;
 }
 .row{
@@ -33,6 +32,9 @@
 }
 .flex-center{
   justify-content:center;
+}
+.mg-0>h1,.mg-0>p{
+    margin: 0;
 }
 
 .btn{
