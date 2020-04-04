@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="../alert.css">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li>
+                ⚡ Latest
+            </li>
+            <li>
+                JavaScript
+            </li>
+            <li>
+                Vue.js
+            </li>
+            <li>
+                React
+            </li>
+            <li>
+                Angular
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Hello World !</h1>
+    </header>
+    <main>
+       <div class="button-grup">
+         <button class="btn primary btn1">
+             Alert 1
+         </button>
+         <button class="btn primary btn2">
+            Alert 2
+        </button>
+        <button class="btn primary btn3">
+            Alert 3
+        </button>
+        <button class="btn primary btn4">
+            Alert 4
+        </button>
+
+       </div>
+    </main>
+<script src="../alert.js"></script>
+<script>
+    let btn1 = document.querySelector('.btn1');
+    let btn2 = document.querySelector('.btn2');
+    let btn3 = document.querySelector('.btn3');
+    let btn4 = document.querySelector('.btn4');
+    btn1.addEventListener('click',()=>{
+        Alert({title:'Alert1',message:'Hello There !, I am using Alert.'});
+    });
+    btn2.addEventListener('click',async ()=>{
+        let res = {result:false}; 
+        // create a feild {result:true} if ok button pressed else {result:false}
+        Alert({title:'Alert2',message:'You Can get  response from Alert.',response:res});
+    });
+    btn3.addEventListener('click',()=>{
+        Alert({message:'Alert Without title'});
+    });
+    btn4.addEventListener('click',()=>{
+        Alert();
+    });
+
+    
+
+</script>
+</body>
+</html>
